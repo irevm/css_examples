@@ -1,0 +1,19 @@
+*{
+  text-align: center;
+}
+
+div{
+  margin-bottom: 1em;
+}
+
+#vegetable{
+  padding: 1em;
+  color: whitesmoke;
+  font-weight: bolder;
+  background-image: url(../img/plant.jpg);
+}
+
+#news {
+  padding: 1em;
+  background: linear-gradient(to bottom, rgb(207, 198, 169), rgb(126, 219, 113));
+}
