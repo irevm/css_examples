@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Rubik:wght@500&display=swap');
+
+
+@font-face {  
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Lemon';
+    src: url('../fonts/lemon_days.ttf');
+}
+
+body {
+  text-align: center;
+  font-family: 'Lemon';
+  background-color: #000;
+  color: white;
+}
+
+h2{
+  font-family: 'Rubik', sans-serif;
+}
+
+h3{
+  font-family: 'Raleway', sans-serif;
+}
