@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Combinadores</title>
   <link rel="stylesheet" href="css/combinadores.css">
+  <link rel="stylesheet" href="css/pseudoelementos.css">
 </head>
 <body>
   <main>
@@ -18,7 +19,12 @@
         <p>Pájaro Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, eaque?</p>
       </div>
       <article>
-        <p>Tomates... ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="tomates-text">Tomates... ipsum 
+          <span tabindex="0" data-descr="collection of words and punctuation">text</span>
+          sdfhfdh fdhdfh Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur
+          d <span tabindex="0" data-descr="small popups that appear when hovering">tooltips</span>
+          sit amet consectetur adipisicing elit.
+        </p>
         <div>
           <img src="img/tomatoes.jpg" alt="tomatoes">
           <span class="caption">The second photo</span>
