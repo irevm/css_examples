@@ -1,0 +1,25 @@
+/*Esta regla centra el texto de los elementos <p> que sean hijos de un elemento <article> */
+article > p {
+  text-align: center;
+}
+/*Esta regla alinea el texto con el borde derecho de la línea de la caja 
+de los elementos <p> que sean hermanos de un elemento <h2>*/
+h2 ~ p, h2 ~ img {
+  text-align: end;
+}
+
+/*Selecciona todos los span.caption que estén inmediatamente después de una etiqueta <img>*/
+img + span.caption {
+  font-style: italic;
+  font-weight: bold;
+}
+
+/*Selecciona todos los div que son hijos de otro div*/
+div > div{
+  outline: 8px ridge rgba(170, 50, 220, .6);
+}
+
+/*Selecciona todos los div que son descendientes de otro div (no solo hijos directos)*/
+div div {
+  background-color: coral;
+}
