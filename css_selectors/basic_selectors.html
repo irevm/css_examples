@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Selectors bàsics</title>
   <link rel="stylesheet" href="css/basic_selectors.css">
+  <link rel="stylesheet" href="css/pseudoclasses.css">
 </head>
 <body>
   <div class="form-div">
@@ -14,30 +15,44 @@
       <p>
         <label>
           Nom<span class="red">*</span>
-          <input type="text" name="user-name" placeholder="Nom" autocomplete="off">
+          <input type="text" name="user-name" placeholder="Nom" autocomplete="off" required>
         </label>        
       </p>
       <p>
         <label>
           Email<span class="red">*</span>
-          <input type="email" name="user-email" placeholder="Email" autocomplete="off">
+          <input type="email" name="user-email" placeholder="Email" autocomplete="off" required>
         </label>
       </p>
       <p>
         <label>
           Contrassenya<span class="red">*</span>
-          <input type="password" name="user-password" placeholder="Contrassenya" autocomplete="off">
+          <input type="password" name="user-password" placeholder="Contrassenya" autocomplete="off" required>
         </label>
       </p>
       <p>
         <label>
           Repeteix contrassenya<span class="red">*</span>
-          <input type="password" name="user-password-repeat" placeholder="Repeteix contrassenya" autocomplete="off">
+          <input type="password" name="user-password-repeat" placeholder="Repeteix contrassenya" autocomplete="off" required>
+        </label>
+      </p>
+      <p>
+        <label>
+          Edat<span class="red">*</span>
+          <input type="number" name="age" placeholder="Edat" autocomplete="off" required min="18" max="99">
+        </label>
+      </p>
+      <p>
+        <label>
+          <input type="checkbox" name="condicions" required><span>Declar haver llegit i acceptar les <a href="#condicions-generals">condicions generals</a> de l'aplicació i la normativa sobre protecció de dades personals.</span><span class="red">*</span>
         </label>
       </p>
       <p>
         <input type="submit" id="button-login" value="Inicia sessió">
-      </p>      
+      </p>  
+      <p>
+        <input type="reset" id="button-reset" value="Neteja" disabled>
+      </p>     
     </form> 
   </div>
 </body>

@@ -32,7 +32,8 @@ h1 {
 /*Selector d'atribut*/
 input[type=text],
 input[type=password],
-input[type=email] {  
+input[type=email],
+input[type=number] {  
 	outline: none;	
   width: 95%;
 	background: #fff;
@@ -43,18 +44,10 @@ input[type=email] {
   border-radius: 0.5em;
 }
 
-input[type=text]:focus,
-input[type=password]:focus,
-input[type=email]:focus {
-  box-shadow: 0 0 5px #43D1AF;
-	padding: 3%;
-	border: 1px solid #43D1AF;
-}
-
 /*Selector d'identificador*/
-#button-login {
+#button-login, #button-reset {
   background-color: #43D1AF;
-  width: 97%;
+  width: 100%;
 	padding: 3%;
 	background: #43D1AF;
 	border-bottom: 2px solid #30C29E;
@@ -65,11 +58,8 @@ input[type=email]:focus {
   outline: none;
 }
 
-#button-login:focus {
-  box-shadow: 0 0 5px rgba(9, 8, 8, 0.8);
-}
-
-#button-login:hover {
-  background: #2EBC99;
+#button-reset {
+  background-color: #555;
+  border-bottom: 2px solid #555;
 }
 
