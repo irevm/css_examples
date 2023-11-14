@@ -1,0 +1,40 @@
+/* label:focus-within {
+  outline: 1px solid orange;
+} */
+
+input[type="radio"]:not(:checked) + span { 
+  font-weight: normal;
+}
+
+input[type="radio"]:checked + span {
+  font-weight: bold; 
+}
+
+/* Image style*/
+input[type="radio"] + img {
+  cursor: pointer;
+}
+
+img[src*=img] {
+  opacity: 0.5;
+  margin: 10px;
+  height: calc(412px * 0.15);
+  width: calc(412px * 0.15);
+}
+
+/* Image on hover or checked style*/
+img[src*=img]:hover, [type="radio"]:checked + img {
+  opacity: 1;
+  height: calc(412px * 0.15);
+  width: calc(412px * 0.15); 
+  margin: 10px;
+  border:2px solid black;
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+}
+
+/* Style to not selected radio buttons after selecting a button. Add class with JavaScript*/
+label.unselected-style {  
+  display: none;
+}
