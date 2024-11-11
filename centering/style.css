@@ -68,3 +68,37 @@ main section {
   padding: 20px;
   vertical-align: middle;
 }
+
+/*Centrar vertical emprant position si sé alçada*/
+aside {
+  height: 250px;
+  position: relative;
+  background-color: cornflowerblue;
+}
+
+aside div {
+  height: 150px;
+  margin-top: -75px; /** La meitat de l'alçada **/
+  position: absolute;
+  top: 50%;
+  border: 1px solid black;
+  /*Centrat horitzontal*/
+  width: 100px;
+  margin-left: calc(50% - 50px);
+}
+
+/*Centrar vertical emprant position si no sé alçada*/
+body > section {
+  background-color: aquamarine;
+  position:relative;
+  height: 200px;
+}
+
+body > section div {
+  position:absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /*Centrat horitzonal*/
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
