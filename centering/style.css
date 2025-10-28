@@ -83,8 +83,8 @@ aside div {
   top: 50%;
   border: 1px solid black;
   /*Centrat horitzontal*/
-  width: 100px;
-  margin-left: calc(50% - 50px);
+  /* width: 100px;
+  margin-left: calc(50% - 50px); */
 }
 
 /*Centrar vertical emprant position si no sé alçada*/
